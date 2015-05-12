@@ -1,0 +1,63 @@
+.dropmenudiv {
+	position: absolute;
+	line-height: 18px;
+	width: 150px;
+	z-index: 1000;
+  top: 300px;
+  left: 100px;
+  -moz-background-clip:border;
+  -moz-background-inline-policy:continuous;
+  -moz-background-origin:padding;
+  -moz-border-radius-bottomleft:17px;
+  -moz-border-radius-topright:17px;
+  background:transparent url(../images/shadow.png) no-repeat scroll right bottom;
+  padding:0 8px 9px 0;
+  border-top: 1px solid white; 	
+}
+
+.dropmenudiv ul {
+  background: #EFEFEF none repeat scroll 0 0;
+  margin: 0px;
+}
+
+.dropmenudiv li a span {
+	text-align: left;
+  color:#2B4360;
+  display:block;
+  padding:1px 0 0;
+  font-family:inherit;
+  font-size:100%;
+  font-style:inherit;
+  font-weight:inherit;
+}
+
+.dropmenudiv a {
+	text-decoration: none;
+	margin: 1px 2px 1px 3px;	
+	color: #234175;
+	display: block;	/* entire menu item has to be clickable */
+}
+
+.dropmenudiv ul li
+{
+	list-style-type: none;
+	padding:5px;
+	text-align:left;
+	border-bottom:1px solid #CFCFCF;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.dropmenudiv ul li:last-child
+{
+	border-bottom:none;
+}
+
+.dropmenudiv ul li:hover
+{
+	background-color:#CDCDCD;
+}
+
+.dropmenudiv li a, .dropmenudiv li a:hover, .dropmenudiv li a:active, .dropmenudiv li a:visited {
+text-decoration:none;
+}

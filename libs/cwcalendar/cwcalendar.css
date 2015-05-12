@@ -1,0 +1,177 @@
+/*  CALENDAR CONTAINER */
+#calendar
+{
+	/*width: 241px;*/
+	width:190px;
+	height: 185px;
+	text-align: center;
+	margin: 5px auto;
+	border: 1px solid #575757;
+	background-color: #ffffff;
+	position: absolute;
+	font: 11px Trebuchet MS;
+}
+
+ul
+{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+/*  ALL*in*ONE */
+.months, .emptM, .headDay, .dayNormal, .dayAllow, .dayNotAllow, .dayBlank, .dayDisabled, .dayWeekend, .dayCurrent, .yearBrowse, .monthDisabled, .currMonth, #closeBtn  
+{
+	margin: 0px 0 0 0px;
+	padding-left: 0px;
+	padding-top: 0px;	
+	width: 27px;
+	height: 20px;
+	line-height: 14px;
+	float: left;
+	text-align: center;
+	background-color: #cccccc;
+	color: #000000;
+	display: inline;
+}
+
+.emptM, .dayDisabled, .monthDisabled
+{
+	color: #d7d6d5;
+	background-color: #666;
+	width: 27px;
+}
+
+/*  NAGŁÓWKI */
+/* etykietki dni */
+.headDay
+{
+	color: #ffffff;
+	background-color: #575757;
+	width: 27px;
+	padding-top:4px;
+}
+
+/* SZEROKOŚĆ WSZYSTKICH TYPÓW DNI */
+/* trzeba z tym porzadek zrobic bo zdecydowanie zbyt czesto wystepuje ten styl */
+.dayNormal, .dayBlank, .dayWeekend, .dayCurrent
+{
+	width: 27px;	
+}
+
+/*
+ *  * TYPY DNI * TYPY DNI * TYPY DNI * TYPY DNI * TYPY DNI * TYPY DNI * TYPY DNI * TYPY DNI *
+ */
+
+/* vxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvx DNI DOPUSZCZONE DO KLIKANIA */
+.dayAllow
+{
+	color: #ffffff;
+	background-color: #f3f8ff;
+	width: 27px;
+}
+
+/* vxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvx DNI PUSTE - CZYLI NIEWIADOMO JAKIE */
+.dayBlank{
+	background-color: #f3f8ff
+}
+
+/*
+ *  * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA * CUDA *
+ */
+
+#elements{height: 150px;}
+.months a, #days a, .currMonth a{color: #000; display: block;}
+.currMonth a{color: #000000}
+
+/* wygląda jak styl ogólny do wszystkich pól dni */
+/* .dayCurrent, .currMonth{background-color: #c5ffb8} */
+#days
+{
+	margin-left: 1px; 
+	/*width: 238px;*/
+	width:190px;
+}
+
+/* wygląda jak styl do wszystkich linków w kalendarzu */
+#days a
+{
+	color: #004294;
+}
+
+/* CLOSE BUTTON */
+.yearBrowse, #closeBtn , #clearBtn
+{
+	/*width: 240px;*/
+	width:190px; 
+	background-color: #FFFFFF; 
+	line-height: 14px;
+}
+
+.yearBrowse a, #closeBtn a, #clearBtn a
+{
+	text-decoration: none; 
+	color: #f30; 
+	font-weight: bold;
+}
+
+.yearBrowse b
+{
+	margin: 0 5px
+}
+
+/* ZMIANA MIESIĘCY */
+#nextBtn
+{
+	width: 20px; 
+	background-color: #FFFFFF; 
+	font-weight: bold;
+}
+
+#prevBtn
+{
+	width: 20px; 
+	background-color: #FFFFFF; 
+	font-weight: bold;
+}
+
+#yearLabel
+{
+	font-weight: bold;
+	font-size:11px;
+}
+/* MODYFIKACJE KALENDARZA */
+
+/* vxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvx DNI ŁIKENDOWE */
+/* pola */
+.dayWeekend
+{
+	cursor:default;
+	background-color: #fbd4d4;
+	color:#FBD4D4;
+}
+
+/* linki */
+.dayWeekend a{
+	text-decoration:none;
+	color:#FBD4D4;	
+}
+
+/* vxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvxvx dni zblokowane lub niedostępne */
+
+.dayNotAllow {
+	text-decoration: none;
+	background-color: #cccccc;
+}
+
+.dayCurrent {
+	background-color: #f3f8ff;
+}
+
+/* ===================== styl opisuje po prostu dzień czy dostępny czy niedostępny */
+/* ===================== jest jakby warstwę pod allow czy disabled */
+/* ===================== żeby zobaczyć jak działa najlepiej dać text-decoration */
+.dayNormal {
+	background-color: #f3f8ff;
+	text-decoration: none;
+}

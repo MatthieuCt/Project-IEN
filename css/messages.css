@@ -1,0 +1,43 @@
+.error, .alert, .notice, .success, .info {
+    border: 2px solid #DDDDDD;
+    margin: 1em;
+    padding: 0.8em;
+    
+}
+.error, .alert {
+    background: none repeat scroll 0 0 #FBE3E4;
+    border-color: #FBC2C4;
+    color: #8A1F11;
+}
+.notice {
+    background: none repeat scroll 0 0 #FFF6BF;
+    border-color: #FFD324;
+    color: #514721;
+}
+.success {
+    background: none repeat scroll 0 0 #E6EFC2;
+    border-color: #C6D880;
+    color: #264409;
+}
+.info {
+    background: none repeat scroll 0 0 #D5EDF8;
+    border-color: #92CAE4;
+    color: #205791;
+}
+.error a, .alert a {
+    color: #8A1F11;
+}
+.notice a {
+    color: #514721;
+}
+.success a {
+    color: #264409;
+}
+.info a {
+    color: #205791;
+}
+.container {
+    margin: 0 auto;
+    width: 950px;
+}
+

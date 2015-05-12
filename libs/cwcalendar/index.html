@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Untitled Document</title>
+		<link rel="stylesheet" title="CSS StyleSheet" href="cwcalendar.css" type="text/css" media="all" />
+
+		<script type="text/javascript" src="calendar-core.js">
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" name="data" id="data" readonly onclick="fPopCalendar('data')" />
+		
+		
+		<br /><br /><br /><br />
+	  <input type="text" name="data2" id="data2" readonly onclick="fPopCalendar('data2')" />
+	  <img id="cal1" src="calendar.png" onclick="fPopCalendarStrict( 'date_min', 'date_max' ,'data2')" />
+	  <input id="date_min" type="text" value="2008-09-05" >
+	  <input id="date_max" type="text" value="2008-09-12" >
+	</body>
+</html>
